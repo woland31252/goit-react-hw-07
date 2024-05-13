@@ -1,0 +1,13 @@
+.error {
+    text-align: center;
+}
+
+.errorTitle {
+    font-size: 48px;
+    color:brown;
+}
+
+.errorText {
+    font-size: 36px;
+    color:blue;
+}

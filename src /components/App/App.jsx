@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchContacts } from '../../redux/contactsOps';
 import { loading } from '../../redux/selectors.js';
+import { error } from '../../redux/selectors.js';
+import FetchError from '../FetchError/FetchError.jsx';
 import ContactForm from '../ContactForm/ContactForm';
 import ContactList from '../ContactList/ContactList';
 import SearchBox from '../SearchBox/SearchBox';
@@ -12,6 +14,8 @@ import css from './App.module.css'
 function App() {
   const dispatch = useDispatch();
   const isLoading = useSelector(loading);
+  const isError = useSelector(error);
+
   useEffect(() => {
     dispatch(fetchContacts());
   }, [dispatch]);
@@ -22,7 +26,7 @@ function App() {
       <h1 className={css.phoneTitle}>Phonebook</h1>
       <ContactForm />
       {isLoading && <Loader/>}
-      <SearchBox />
+      {isError ? <FetchError /> : <SearchBox />}
       <ContactList/>
     </div>
   )
