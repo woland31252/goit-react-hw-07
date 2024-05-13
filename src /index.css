@@ -1,0 +1,19 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+body {
+  font-family: 'montserrat';
+  line-height: 1.5;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: #92c3d4;
+  box-shadow: inset 0px 0px 12px 9px aqua;
+}
+
+
