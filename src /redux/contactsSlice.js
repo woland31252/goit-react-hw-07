@@ -45,7 +45,7 @@ const contactsSlice = createSlice({
         state.loading = false;
         state.error = false;
         const index = state.items.findIndex(
-          (item) => item.id === action.payload
+          (item) => item.id === action.payload.id
         );
         state.items.splice(index, 1);
       })
