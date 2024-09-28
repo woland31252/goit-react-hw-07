@@ -1,27 +1,27 @@
 .form {
-    display: flex;
-    flex-direction: column;
-    position:relative;
-    width: 400px;
-    border: 2px solid darkgray;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 400px;
+  border: 2px solid darkgray;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
 .formLable {
-    font-size: 18px;
-    line-height: 1;
-    margin-bottom: 12px;
-    margin-top: 5px;
+  font-size: 18px;
+  line-height: 1;
+  margin-bottom: 12px;
+  margin-top: 5px;
 }
 
 .formInput {
-    font-size: 18px;
-    padding: 6px;
-    border: 2px solid darkgray;
-    border-radius: 8px;
-    margin-bottom: 15px;
+  font-size: 18px;
+  padding: 6px;
+  border: 2px solid darkgray;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 /* .gapBottom {
@@ -29,36 +29,35 @@
 } */
 
 .formBtn {
-    border-radius: 8px;
-    border: 2px solid darkgray;
-    padding: 8px 25px;
-    font-size: 18px;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #f9f9f9;
-    cursor: pointer;
-    transition: border-color 0.25s;
-    width: 160px;
-    /* height: 50px; */
-    margin: 0 auto;
-
+  border-radius: 8px;
+  border: 2px solid darkgray;
+  padding: 8px 25px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: 160px;
+  /* height: 50px; */
+  margin: 0 auto;
 }
 
 .formBtn:hover {
-    background-color: gray;
-    transition: 400ms;
-    color: beige;
+  background-color: gray;
+  transition: 400ms;
+  color: beige;
 }
 
 .formValid {
-    color:crimson;
-    position: absolute;
+  color: crimson;
+  position: absolute;
 }
 
 .formNum {
-    bottom: 60px;
+  bottom: 60px;
 }
 
 .formName {
-    bottom: 155px;
+  bottom: 155px;
 }

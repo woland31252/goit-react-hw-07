@@ -1,9 +1,8 @@
-import css from '../Loader/Loader.module.css';
+import css from "../Loader/Loader.module.css";
 export default function Loader() {
-    return (
+  return (
     <>
-        <p className={css.loading}>Loading....</p>
+      <p className={css.loading}>Loading....</p>
     </>
-
-    ) 
+  );
 }
